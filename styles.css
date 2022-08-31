@@ -1,0 +1,22 @@
+button {
+    text-align: center;
+}
+
+h3 {
+    padding: 2%;
+    padding-bottom: 1.5%
+}
+
+.container {
+    width: auto;
+}
+
+.form-group, .form-control { 
+    width: 30%;
+    padding-bottom: 1.1%;
+} 
+
+#totalValue {
+    padding-bottom: 3%;;
+    padding-top: 2.6%;
+}

@@ -1,0 +1,78 @@
+{% extends "index.html" %}{% block title %}Compound Interest{% endblock %}
+
+{% block content %}
+
+
+<form method="POST">
+    <h3 align="center">Compound Interest Calculator</h3>
+    <div class="elements" id="elements0" align="center">
+        <div class="form-group">
+            <label for="initialInvestment">Initial Investment</label>
+            <input 
+                class="form-control"
+                id="initialInvestment" 
+                name="initial_investment"
+                placeholder="Enter your initial investment"
+                autofocus
+                >
+        </div>
+        <div class="form-group">
+            <label for="monthlyAddition">Monthly Addition</label>
+            <input 
+                class="form-control" 
+                id="monthlyAddition" 
+                name="monthlyAddition" 
+                placeholder="Enter your monthly addition"
+                >
+        </div>
+        <div class="form-group">
+            <label for="interestRate">Interest Rate</label>
+            <input 
+                class="form-control" 
+                id="interestRate" 
+                name="interestRate"
+                placeholder="Enter your estimated interest rate"
+                >
+            </div>
+        <div class="form-group">
+            <label for="investmentLength">Investment Length</label>
+            <input 
+            class="form-control" 
+            id="investmentLength" 
+            name="investmentLength" 
+            placeholder="Length of time to compound this money"
+            >
+            <br> 
+        </div>
+    </div>
+
+
+
+    <!-- <button type="submit" class="btn btn-primary">Compare different scenario</button> -->
+    <div align="center" id="buttons">
+        <button id="calculate" type="button" class="btn btn-light" onclick="calculate();">Calculate</button>
+        <button id="resetBtn" class="resetBtn btn btn-danger" onclick="resetFields()" >Reset</button>
+
+        <br>
+        <br>
+
+        <button id="addInvestTerm" type="button" class="addBtn btn btn-primary" onclick="addTerm()">Add investment term</button>
+        <button id="rmvInvestTerm" type="button" class="rmvBtn btn btn-primary" onclick="rmvTerm()">Remove investment term</button>
+        <p id="totalValue"></p>
+    </div> 
+</form>
+
+<script 
+    src="{{url_for('static', filename = 'compound.js')}}" defer>
+</script>
+{% endblock %}
+
+
+
+
+<!-- add background color to each investment term to help make groups more clear -->
+<!-- choose compound frequency -->
+<!-- give an interest variance range -->
+
+
+
