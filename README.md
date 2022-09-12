@@ -1,1 +1,7 @@
 # Compound-Interest-Calculator
+
+As someone who is very pationate about personal finance, I find compound interest calculators very exciting. After playing with a lot of these calculators on google, I found a big flaw: they do not allow you to change the amount you wish to invest every month. This does not make sense if one thinks about it, as your income will not stay the same forever. This makes the task of inputting different amounts to invest very tedious. One must input their initial investment, monthly investment, estimated interest rate, and length of time to compound their money for to calculate for one income. Then, if they want to invest more/ less, they have to run a different scenario using a different monthly investment
+
+Because of this, I created a better calculator in order to make this powerful tool less tedious to use. With my calculator, you are able to add multiple investment terms. For example, maybe one expects to invest $100/ month for one year, and $500/ month tduring a different year. Instead of performing two separate calculations, they can just do one. This calculator will be increasingly helpful as the number of investment terms increases.
+
+In the future, I plan on creating a way to compare different scenarios. I also want to make a graph that displays how one's money has compounded over time. I would also like to publish this as an actual website, because I think it is important for everyone to have access to this tool. 
