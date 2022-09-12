@@ -9,7 +9,7 @@
         <div class="form-group">
             <label for="initialInvestment">Initial Investment</label>
             <input 
-                class="form-control"
+                class="key-numeric form-control"
                 id="initialInvestment" 
                 name="initial_investment"
                 placeholder="Enter your initial investment"
@@ -19,7 +19,7 @@
         <div class="form-group">
             <label for="monthlyAddition">Monthly Addition</label>
             <input 
-                class="form-control" 
+                class="key-numeric form-control" 
                 id="monthlyAddition" 
                 name="monthlyAddition" 
                 placeholder="Enter your monthly addition"
@@ -28,7 +28,7 @@
         <div class="form-group">
             <label for="interestRate">Interest Rate</label>
             <input 
-                class="form-control" 
+                class="key-numeric form-control" 
                 id="interestRate" 
                 name="interestRate"
                 placeholder="Enter your estimated interest rate"
@@ -37,7 +37,7 @@
         <div class="form-group">
             <label for="investmentLength">Investment Length</label>
             <input 
-            class="form-control" 
+            class="key-numeric form-control" 
             id="investmentLength" 
             name="investmentLength" 
             placeholder="Length of time to compound this money"
@@ -47,8 +47,7 @@
     </div>
 
 
-
-    <!-- <button type="submit" class="btn btn-primary">Compare different scenario</button> -->
+    
     <div align="center" id="buttons">
         <button id="calculate" type="button" class="btn btn-light" onclick="calculate();">Calculate</button>
         <button id="resetBtn" class="resetBtn btn btn-danger" onclick="resetFields()" >Reset</button>
@@ -70,9 +69,6 @@
 
 
 
-<!-- add background color to each investment term to help make groups more clear -->
-<!-- choose compound frequency -->
-<!-- give an interest variance range -->
 
 
 
