@@ -1,6 +1,13 @@
 
 
 document.addEventListener("DOMContentLoaded", function(e){
+    
+    $('.key-numeric').keypress(function(e) {
+        var verified = (e.which == 8 || e.which == undefined || e.which == 0) ? null : String.fromCharCode(e.which).match(/[^0-9]/);
+        if (verified)
+            e.preventDefault();
+    });
+    
     e.preventDefault();
     var calculate = document.getElementById("calculate");
     var addTerm = document.getElementById("addInvestTerm");
@@ -50,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function(e){
         <div class="form-group">
             <label for="monthlyAddition">Monthly Addition</label>
             <input 
-                class="form-control" 
+                class="key-numeric form-control" 
                 id="monthlyAddition${elNum}" 
                 name="monthlyAddition${elNum}" 
                 placeholder="Enter monthly addition"
@@ -59,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function(e){
         <div class="form-group">
             <label for="interestRate">Interest Rate</label>
             <input 
-                class="form-control" 
+                class="key-numeric form-control" 
                 id="interestRate${elNum}" 
                 name="interestRate${elNum}"
                 placeholder="Enter your estimated interest rate"
@@ -68,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function(e){
         <div class="form-group">
             <label for="investmentLength">Investment Length</label>
             <input 
-                class="form-control" 
+                class="key-numeric form-control" 
                 id="investmentLength${elNum}" 
                 name="investmentLength${elNum}" 
                 placeholder="How long would you like to compound this money?"
